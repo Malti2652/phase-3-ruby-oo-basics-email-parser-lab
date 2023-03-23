@@ -8,10 +8,4 @@ class EmailAddressParser
     @emails_string = emails_string
   end
 
-  def parse
-    # Split the input string by commas and/or spaces, then remove any leading/trailing whitespace
-    # and any empty strings (e.g. due to consecutive commas or spaces)
-    # Finally, remove any duplicates using the uniq method
-    @emails_string.split(/[,\s]+/).map(&:strip).reject(&:empty?).uniq
-  end
-end
+ 
